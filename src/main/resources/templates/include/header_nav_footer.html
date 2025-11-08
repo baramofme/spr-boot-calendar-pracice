@@ -1,0 +1,26 @@
+<html lang="en"
+xmlns:th="http://www.thymeleaf.org">
+
+<header th:fragment="header">
+    <div id="top">
+        <h3>내 달력</h3>
+    </div>
+    <div id="header_wrap">
+        <a th:href="@{/}">홈</a>
+        <a th:href="@{member/signup}">등록</a>
+        <a th:href="@{member/signin}">로그인</a>
+    </div>
+</header>
+<nav th:fragment="nav">
+    <div id="nav_wrap">
+        <a th:href="@{/planner}">플래너</a>
+    </div>
+
+</nav>
+
+<footer th:fragment="footer">
+    <div id="footer_wrap">저작원 OFFICE 회사. 모두 가짐.</div>
+</footer>
+
+
+</html>
